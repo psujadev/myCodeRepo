@@ -21,7 +21,7 @@ public class LoginController {
 		loginModel.setPassword(password);
 		boolean test= loginService.Login(loginModel);
 		if(test) {
-		return ("<h1>welcome</h1>");
+		return ("<h1>welcome!</h1>");
 		}else {
 			return ("<h1>Not Authorized</h1>");
 		}
