@@ -14,7 +14,7 @@ public class LoginController {
 	@Autowired
 	ILoginService loginService;
 	
-	@RequestMapping(value="login/{userName}/{password}")
+	@RequestMapping(value="/login/{userName}/{password}")
 	public String Login(@PathVariable String userName,@PathVariable String password) {
 		LoginModel loginModel=new LoginModel();
 		loginModel.setUserName(userName);
